@@ -1,0 +1,44 @@
+name: 🦆 Pattojs Feature Request
+description: Suggest an idea for this project.
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+  - emrocode
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit a feature request!
+        Your feedback helps improve the app.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear and concise description of what the problem is.
+      placeholder: Describe the problem here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you would like
+      description: A clear and concise description of what you want to happen.
+      placeholder: Describe the feature here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you have considered
+      description: A clear and concise description of any alternative solutions or features you have considered.
+
+  - type: upload
+    id: mockups
+    attributes:
+      label: Upload mockups or screenshots
+      description: If applicable, drag and drop mockups or screenshots to help explain your idea.
+    validations:
+      required: false
