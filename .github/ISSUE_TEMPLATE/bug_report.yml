@@ -1,0 +1,48 @@
+name: 🦆 Pattojs Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - emrocode
+type: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+        Your feedback helps us improve the app for all users.
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: Which platform did you encounter the bug on?
+      options:
+        - Windows
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Tell us what you see, and what you expected to happen instead.
+      placeholder: Describe the issue in detail here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any terminal or application logs. This will be automatically formatted into code blocks.
+      render: shell
+
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Upload screenshots
+      description: If applicable, drag and drop screenshots to help explain your problem.
+    validations:
+      required: false
